@@ -1,8 +1,8 @@
 /* eslint-disable class-methods-use-this */
 import API from './Api.js';
 
-const api = new API('http://localhost:7070/inst');
-// const api = new API('https://heroku-ahj-hw-8-2.herokuapp.com/users');
+// const api = new API('http://localhost:7070/inst');
+const api = new API('https://heroku-ahj-hw-8-3.herokuapp.com/inst');
 
 function convertDate(value) {
   const rValue = value < 10 ? `0${value}` : value;
@@ -23,8 +23,8 @@ function printData(valueDate) {
 
 export default class Messanger {
   constructor() {
-    this.url = 'ws://localhost:7070/ws';
-    // this.url = 'wss://heroku-ahj-hw-8-2.herokuapp.com/ws';
+    // this.url = 'ws://localhost:7070/ws';
+    this.url = 'wss://heroku-ahj-hw-8-3.herokuapp.com/ws';
   }
 
   init() {
